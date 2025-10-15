@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BS COMPUTERS - Contact Us Page</title>
+    <title>BS COMPUTERS - Blog Page</title>
     <!-- bootstrap icnos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -126,52 +126,69 @@
     <!-- Breadcrumb Section -->
     <section class="breadcrumb-section text-center text-white">
         <div class="container breadcrumb-content">
-            <h1 class="fw-bold mb-3">Contact Us </h1>
+            <h1 class="fw-bold mb-3">Blog </h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">Contact Us</li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
                 </ol>
             </nav>
         </div>
     </section>
     <!-- End Breadcrumb Section -->
 
-    <!-- contact us -->
-    <div class="container contact-container">
-        <div class="row">
-            <!-- Left Side: Google Map -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3502.761317657085!2d77.44718152457182!3d28.60693638524425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Shiri%20Radha%20Sky%20Road%2C%20F03%2Csky%20Plaza%2C%20Sector%2016B%20Rd%2C%20Bhangel%2C%20Noida%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201318!5e0!3m2!1sen!2sin!4v1760506194029!5m2!1sen!2sin"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- start blog -->
+    <section id="blog" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Latest Blogs</h2>
+                <p class="text-muted">Stay updated with the latest from BS COMPUTERS</p>
             </div>
 
-            <!-- Right Side: Contact Form -->
-            <div class="col-md-6">
-                <div class="contact-form">
-                    <h3 class="mb-4">Contact Us</h3>
-                    <form id="contactForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" required />
+            <div class="row g-4">
+
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/Laptop-battery.jpg" class="card-img-top" alt="Blog Image">
+                        <div class="card-body">
+                            <h5 class="card-title">5 Signs Your Laptop Needs a New Battery</h5>
+                            <p class="card-text text-muted">Learn how to detect battery issues early and avoid system failures.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
                         </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" required />
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Send via WhatsApp</button>
-                    </form>
+                    </div>
                 </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/Laptop-cable.jpg" class="card-img-top" alt="Blog Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Top 10 Laptop Accessories in 2025</h5>
+                            <p class="card-text text-muted">From coolers to docking stations, these tools can boost your productivity.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/Laptop-display.jpg" class="card-img-top" alt="Blog Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Desktop vs Laptop: Which is Better for You?</h5>
+                            <p class="card-text text-muted">We break down performance, price, and use-case to help you choose.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-    <!-- end contact us -->
+    </section>
+    <!-- end blog -->
 
     <!-- footer -->
     <?php include('includes/footer.php') ?>

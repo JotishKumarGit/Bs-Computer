@@ -96,3 +96,42 @@ body {
   background-color: #333;
   transform: translateY(-3px);
 }
+
+/* bread crums  */
+.breadcrumb-section {
+  background-image: url("../images/baner_1.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 100px 0;
+  color: white;
+}
+
+.breadcrumb-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Darkness overlay */
+  z-index: 1;
+}
+
+.breadcrumb-content {
+  position: relative;
+  z-index: 2;
+}
+
+.breadcrumb a {
+  color: #ffffffb3;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-section {
+    padding: 60px 0;
+  }
+}

@@ -72,11 +72,8 @@
       object-fit: cover;
     }
   </style>
+  
   <style>
-    body {
-      background: #f8f9fa;
-    }
-
     .contact-container {
       padding: 50px 0;
     }
@@ -122,95 +119,9 @@
 </head>
 
 <body>
-  <!-- Sticky Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top py-3">
-    <div class="container-fluid px-4">
-      <!-- Brand -->
-      <a class="navbar-brand fw-bold fs-4" href="#">BS COMPUTERS</a>
-
-      <!-- Toggler (mobile) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
-        aria-controls="mobileMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Desktop Nav -->
-      <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Computer Repair</a></li>
-              <li><a class="dropdown-item" href="#">New HDD</a></li>
-              <li><a class="dropdown-item" href="#">Mouse</a></li>
-              <li><a class="dropdown-item" href="#">Laptop SSD</a></li>
-              <li><a class="dropdown-item" href="#">Laptop RAM</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Power Cable</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Motherboard Repair</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Keyboard</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Fan</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Display</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Display Cable</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Chip Level Repairing</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Cable</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Battery</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Adapter Original</a></li>
-              <li><a class="dropdown-item" href="#">Laptop Adapter</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Offcanvas for Mobile Menu -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-
-        <!-- Dropdown inside Offcanvas -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Computer Repair</a></li>
-            <li><a class="dropdown-item" href="#">New HDD</a></li>
-            <li><a class="dropdown-item" href="#">Mouse</a></li>
-            <li><a class="dropdown-item" href="#">Laptop SSD</a></li>
-            <li><a class="dropdown-item" href="#">Laptop RAM</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Power Cable</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Motherboard Repair</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Keyboard</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Fan</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Display</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Display Cable</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Chip Level Repairing</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Cable</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Battery</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Adapter Original</a></li>
-            <li><a class="dropdown-item" href="#">Laptop Adapter</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+    
+<!-- header -->
+<?php include('includes/header.php') ?>
 
   <!-- carousel  -->
   <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
@@ -309,6 +220,7 @@
     <div class="container">
       <h2 class="text-center mb-5">Our Products</h2>
       <div class="row justify-content-center text-center g-4">
+        
         <!-- Product: Computer Repair -->
         <div class="col-md-4">
           <div class="product-card bg-white">
@@ -316,7 +228,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Computer Repair</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Computer_Repair.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -329,7 +241,7 @@
             <div class="p-4">
               <h5 class="fw-bold">New HDD</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="New_HDD.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -342,7 +254,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Mouse</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Mouse.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -355,7 +267,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop SSD</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_SSD.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -368,7 +280,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop RAM</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_RAM.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -381,7 +293,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Power Cable</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Power_Cable.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -395,7 +307,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Motherboard Repair</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Motherboard_Repair.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -408,7 +320,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Keyboard</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Keyboard.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -421,7 +333,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Fan</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Fan.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -434,7 +346,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Display</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Display.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -448,7 +360,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Display Cable</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Display_Cable.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -462,7 +374,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Chip Level Repairing</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Chip_Level_Repairing.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -475,7 +387,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Cable</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Cable.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -488,7 +400,7 @@
             <div class="p-4">
               <h5 class="fw-bold">Laptop Battery</h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Battery.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
@@ -500,13 +412,14 @@
             <img src="assets/images/Laptop-adapter-original.webp" class="img-fluid product-img"
               alt="Laptop Adapter Original" />
             <div class="p-4">
-              <h5 class="fw-bold">Laptop Adapter (Original)</h5>
+              <h5 class="fw-bold">Laptop Adapter </h5>
               <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="btn btn-outline-dark btn-sm">Detail</a>
+                <a href="Laptop_Adapter.php" class="btn btn-outline-dark btn-sm">Detail</a>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
@@ -860,102 +773,5 @@
   </div>
   <!-- end contact us -->
 
-  <!-- Footer -->
-  <footer class="pt-5 pb-4 bg-light text-dark" data-aos="fade-up" data-aos-delay="100">
-    <div class="container text-center text-md-start">
-      <div class="row text-center text-md-start">
-
-        <!-- Company Info -->
-        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
-          <h5 class="text-uppercase fw-bold mb-4">BS COMPUTERS</h5>
-          <p>
-            BS COMPUTERS is your trusted partner for all laptop and desktop parts, repairs, and IT accessories.
-            From adapters to SSDs, we provide quality components and professional services with guaranteed support.
-          </p>
-        </div>
-
-        <!-- Products -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Top Products</h6>
-          <ul class="list-unstyled">
-            <li><a href="#products" class="text-decoration-none text-dark">Laptop Adapter</a></li>
-            <li><a href="#products" class="text-decoration-none text-dark">Laptop Cable</a></li>
-            <li><a href="#products" class="text-decoration-none text-dark">Laptop Display</a></li>
-            <li><a href="#products" class="text-decoration-none text-dark">Laptop Fan</a></li>
-            <li><a href="#products" class="text-decoration-none text-dark">Laptop Keyboard</a></li>
-          </ul>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Quick Links</h6>
-          <ul class="list-unstyled">
-            <li><a href="#about" class="text-decoration-none text-dark">About Us</a></li>
-            <li><a href="#products" class="text-decoration-none text-dark">Products</a></li>
-            <li><a href="#services" class="text-decoration-none text-dark">Services</a></li>
-            <li><a href="#faq" class="text-decoration-none text-dark">FAQ</a></li>
-            <li><a href="#contact" class="text-decoration-none text-dark">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact Info -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="bi bi-geo-alt-fill me-2"></i> F03, Sky Plaza, Sector 16B Rd, Bhangel, Noida, UP 201318</p>
-          <p><i class="bi bi-envelope-fill me-2"></i> bscomputers04@gmail.com</p>
-          <p><i class="bi bi-telephone-fill me-2"></i> +91 88823 77136</p>
-          <p><i class="bi bi-clock-fill me-2"></i> Mon - Sat: 10:00 AM - 7:00 PM</p>
-        </div>
-
-      </div>
-
-      <hr class="my-4" />
-
-      <!-- Bottom Row -->
-      <div class="row align-items-center text-center">
-        <div class="col-md-6 mb-3 mb-md-0">
-          <p class="mb-0">&copy; 2025 <strong>BS COMPUTERS</strong>. All Rights Reserved.</p>
-          <small>Designed by <a href="https://trade4export.com/" target="_blank"
-              class="text-decoration-none fw-bold text-dark">Trade4Export</a></small>
-        </div>
-
-        <!-- Social Media -->
-        <div class="col-md-6">
-          <div class="d-flex justify-content-center justify-content-md-end gap-3">
-            <a href="#" class="text-dark"><i class="bi bi-facebook fs-5"></i></a>
-            <a href="#" class="text-dark"><i class="bi bi-instagram fs-5"></i></a>
-            <a href="https://wa.me/918882377136" target="_blank" class="text-dark"><i
-                class="bi bi-whatsapp fs-5"></i></a>
-            <a href="#" class="text-dark"><i class="bi bi-linkedin fs-5"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- send message on whatsapp -->
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const name = document.getElementById("name").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      const whatsappMessage = `Hello BS COMPUTERS,%0AName: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
-      const whatsappNumber = "91XXXXXXXXXX"; // Replace with your WhatsApp number
-
-      window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
-    });
-  </script>
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="assets/js/script.js"></script>
-  <!-- bootstrap js  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+  <!-- footer -->
+   <?php include('includes/footer.php') ?>
